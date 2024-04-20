@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <!--Bootstraplink-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/41aa99a1fd.js"></script>
+   <!--icon link-->
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<style>
+  .carousel-item{
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat center;
+    background-size: cover;
+  }  
+  .carousel-caption{
+    color: black;
+    bottom: 220px;
+  }
+  .carousel-caption h1{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-family:'Montserrat';
+    font-weight: bold;
+}
+.carousel-caption p{
+    width:60%;
+    line-height: 2.5rem;
+    margin: auto;
+    font-size: 18px;
+    font-family:sans-serif;
+}
+
+.navbar-light .navbar-brand{
+color: black;
+font-weight: bold;
+font-size: 20px;
+}
+.navbar-nav a{
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+}
+.navbar-nav a:hover{
+    color: #fff;
+}
+.carousel-item img{
+    opacity: 0.4;
+}
+hr{  
+            
+            border-top-style: solid;
+            width:11%;
+           border-top-color:#0c1a9e;
+            border-width: 7px;
+            margin: auto;
+        }
+        .welcom-head , .head-port,.head-service{
+            color:#003366;
+            
+        }
+        #welcome-section , #services ,#portfolio{ 
+           background-color: #fff; 
+            padding: 4% 13%;
+            width: 100%;
+            text-align: center;
+
+        }
+       
+        #welcome-section p{
+            padding:1% 13%;
+            color: gray;
+        }
+        .aims{
+            background-color: #003366;
+            text-align: center;
+            margin:3% 0;
+           
+            color: #fff;
+
+        }
+        .story, .vision{
+            background-color: #003366;
+            color:white;
+            padding: 2% 4%;
+        }
+        .mission{
+            background-color: #111;
+           color:white;
+           padding: 2% 4%;
+        }
+        ion-icon {
+  font-size: 50px;
+  padding: 1px 2px;
+  color:#fff;
+}
+.services-para{
+    padding:1% 13%;
+            color: gray;
+}
+#price{
+  width: 100%;
+    font-family:'Montserrat' ;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    background-color:#003366;
+    padding: 3% 7%;
+}
+
+.images{
+    padding: 2% 15%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.images img{
+  padding: 1% 2%;
+}
+.logo{
+ clear: right;
+ padding-right:3% ;
+}
+</style>
+
+
+</head>
+
+
+
+<body>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+   <nav class="navbar navbar-expand-lg navbar-light  fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Tahseen</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link " href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">portfolio</a> </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#services">services</a> </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#price">price</a> </li>
+          </ul>
+      </div>
+    </div>
+  </nav>  
+  <div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active data-bs-interval=1000">
+      <img src="image\profile.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h1>CRICBUZZ</h1>
+        <p> Indian cricket news website owned by Times Internet</p>
+        <p><a href="#" class="btn btn-light">GET STARTED</a></p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="image\main.png" class="d-block w-100" alt="...">
+       <div class="carousel-caption d-none d-md-block">
+        <h1>Men's T20I Player Rankings-ICC Cricket</h1>
+        <p>Official International Cricket Council rankings for T20I match cricket players</p>
+        <p><a  class="btn btn-light" href="#">CLICK HERE</a></p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="image\second.png" class="d-block w-100" alt="...">
+       <div class="carousel-caption d-none d-md-block">
+        <h1>Live Cricket and Watch Online Streaming CricHD</h1>
+        <p>Live Cricket Streaming and Watch Live Cricket Online Streaming on our website CricBuzz. CricBuzz provides free cricket live stream</p>
+        <p><a href="#"  class="btn btn-light">CLICK HERE</a></p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div id="welcome-section">
+
+<h2 class="welcom-head">Welcome To Our Website</h2><hr>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+     like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <a class="btn btn-primary" href="#">READ MORE</a>
+</div>
+<div class="container-fluid">
+<div class="row aims">
+    <div class="col-lg-4  story">
+        <ion-icon name="sunny-outline"></ion-icon>
+        <h2 class="heading-2">Our Story</h2>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem 
+            Ipsum is that it has a more-or-less normal distribution of letters,</p>
+    </div>
+    <div class="col-lg-4 mission">
+        <ion-icon name="radio-outline"></ion-icon>
+        <h2 class="heading-2">Our Mission</h2>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that
+             it has a more-or-less normal distribution of letters,</p>
+    </div>
+     <div class="col-lg-4 vision">
+        <ion-icon name="eye-outline"></ion-icon>
+        <h2 class="heading-2">Our Vision</h2>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem
+             Ipsum is that it has a more-or-less normal distribution of letters,</p>
+    </div>
+</div>
+</div>
+<div id="services">
+    <h1>
+    <h2 class="head-service">Our Services</h2>
+    <hr>
+    <p class="services-para">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+     Lorem Ipsum has been the industry's standard It is a long established fact that a reader will be distracted by the readable 
+     content of a page when looking at its layout.</p>
+     <div class="row">
+        <div class="col-lg-4"> 
+          
+            <p><i class="fa-thin fa-image logo"></i>Web Designing</p>
+        </div>
+     
+        <div class="col-lg-4">
+         
+        <p> <i class="fa-regular fa-wand-magic-sparkles logo"></i>    Web development</p> 
+        </div>
+
+        <div class="col-lg-4">
+         
+             <p> <i class="fa-solid fa-heart logo logo"></i> THEME development</p>
+   </div>
+     </div>
+    <div class="row">
+        <div class="col-lg-4">
+         
+            <p>  <i class="fa-solid fa-camera-retro logo"></i>Mobile Development</p>
+        </div>
+        <div class="col-lg-4">
+          <p> <i class="fa-regular fa-code logo"></i>App Development</p></div>
+        <div class="col-lg-4"><p> <i class="fa-duotone fa-code logo"></i>Desktop Application</p></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4">
+          <p> <i class="fa-solid fa-code logo"></i>Wordpress</p></div>
+        <div class="col-lg-4">
+          <p><i class="fa-solid fa-code logo"></i>WordPress Theme</p></div>
+        <div class="col-lg-4"><p><i class="fa-regular fa-code-compare logo"></i> Support &IT</p></div>
+    </div>
+    <div id="price">
+<div class="row ">
+    <div class="col-lg-3">
+        <ion-icon name="cart-sharp"></ion-icon>
+        <h1>12+</h1>
+        <p>YEAR OF EXPERINCE</p>
+    </div>
+    <div class="col-lg-3">
+        <ion-icon name="people-sharp"></ion-icon>
+        <h1>999+</h1>
+        <p>YEAR OF PROJECT</p>
+    </div>
+    <div class="col-lg-3">
+        <ion-icon name="checkmark-done-circle-sharp"></ion-icon>
+        <h1>480+</h1>
+        <p>TOTLA CLIENT</p>
+    </div>
+    <div class="col-lg-3">
+        <ion-icon name="heart-sharp"></ion-icon>
+        <h1>15+</h1>
+        <p>AWARD WON</p>
+    </div>
+</div>
+    </div>
+    
+<div id="portfolio">
+    <h1>
+    <h2 class="head-port">Our Portfolio</h2>
+    <hr>
+    <p class="text-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+     Lorem Ipsum has been the industry's standard It is a long established fact that a reader will be distracted.</p>
+     <a href="#">All</a>
+     <a href="#">Web Development</a>
+<a href="#">Mobile App Development</a>
+<a href="#">Game Development</a>
+    </div>
+    <div class="images mx-auto">
+    <img src="image\45581245.png" alt=""width="200px" height="150px"/>
+    <img src="image\cricketer-7015983__340.png"  alt=""width="200px" height="150px"/>
+    <img src="image\2018-02-hard-ball-cricket.png" alt=""width="200px" height="150px"/>
+    <img src="image\DtQFRZggMU.png" alt=""width="200px" height="150px"/>
+    <img src="image\istockphoto-518022060-612x612.png"alt=""width="200px" height="150px"/>
+    <img src="image\images.png"width="200px" height="150px"/>
+    </div>
+    <footer class="page-footer bg-primary-subtle">
+        <table class="mx-auto ">
+            <tr>
+                <td> <img src="image\profile-pic.png" height="60" width="50" ></td>
+                <td><h5>Tahseenullah Ihsan</h5>
+                <p class="text-secondary"><em>Student at Quaid-i-Azam university<strong><a href="http:qau.edu.pk">"QAU"</a></strong> Islamabad</em></p>
+            <p>i am Front-Developer.i💗 Coffe and playing Cricket</p>
+            
+            </td>
+            </tr>  
+        </table>
+    </footer>
+</body>
+</html>
